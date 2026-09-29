@@ -1,0 +1,93 @@
+{
+    "dataset": "C:\\phase3.project\\InternTrust\\backend\\data\\Fake_Real_Job_Posting_Cleaned.csv",
+    "total_records": 183,
+    "real_records": 93,
+    "fake_records": 90,
+    "evaluation_method": "5-Fold Stratified Cross-Validation",
+    "random_state": 42,
+    "model": "LogisticRegression(max_iter=1000)",
+    "embedding": "Project fallback embedding",
+    "using_real_transformer": false,
+    "accuracy": 0.8032786885245902,
+    "precision": 0.7755102040816326,
+    "recall": 0.8444444444444444,
+    "f1_score": 0.8085106382978723,
+    "fold_results": [
+        {
+            "Fold": 1,
+            "Accuracy": 0.8378378378378378,
+            "Precision": 0.875,
+            "Recall": 0.7777777777777778,
+            "F1-score": 0.8235294117647058
+        },
+        {
+            "Fold": 2,
+            "Accuracy": 0.8108108108108109,
+            "Precision": 0.7894736842105263,
+            "Recall": 0.8333333333333334,
+            "F1-score": 0.8108108108108109
+        },
+        {
+            "Fold": 3,
+            "Accuracy": 0.7297297297297297,
+            "Precision": 0.6818181818181818,
+            "Recall": 0.8333333333333334,
+            "F1-score": 0.75
+        },
+        {
+            "Fold": 4,
+            "Accuracy": 0.7777777777777778,
+            "Precision": 0.7083333333333334,
+            "Recall": 0.9444444444444444,
+            "F1-score": 0.8095238095238095
+        },
+        {
+            "Fold": 5,
+            "Accuracy": 0.8611111111111112,
+            "Precision": 0.8823529411764706,
+            "Recall": 0.8333333333333334,
+            "F1-score": 0.8571428571428571
+        }
+    ],
+    "fold_mean_std": {
+        "accuracy_mean": 0.8034534534534534,
+        "accuracy_std": 0.051612134824184135,
+        "precision_mean": 0.7873956281077025,
+        "precision_std": 0.09232169194866441,
+        "recall_mean": 0.8444444444444444,
+        "recall_std": 0.06085806194501844,
+        "f1_mean": 0.8102013778484366,
+        "f1_std": 0.03874975925293643
+    },
+    "feature_importance": [
+        {
+            "Feature": "Semantic Similarity",
+            "Mean Permutation Importance": 0.08598659444349291,
+            "Std": 0.04979359256196297
+        },
+        {
+            "Feature": "Urgency Score",
+            "Mean Permutation Importance": 0.001756756756756759,
+            "Std": 0.003928227528040175
+        },
+        {
+            "Feature": "Length Feature",
+            "Mean Permutation Importance": 0.24633105562309815,
+            "Std": 0.07047995975988532
+        }
+    ],
+    "confusion_matrix": [
+        [
+            71,
+            22
+        ],
+        [
+            14,
+            76
+        ]
+    ],
+    "true_negative": 71,
+    "false_positive": 22,
+    "false_negative": 14,
+    "true_positive": 76
+}
